@@ -16,6 +16,7 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
+        // trim before match statement so we can print it without \n
         guess = guess.trim().to_string();
 
         let guess: u32 = match guess.parse() {
